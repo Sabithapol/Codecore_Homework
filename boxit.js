@@ -8,14 +8,18 @@
 
 }
 drawline("sabitha")*/
-
-function drawLine(name){
+// function to draw line
+    function drawLine(a){
     let line ="━"
     let string = ""
-    for ( let i = 0 ; i < name.length ; i++){
+    for ( let i = 1; i <=a; i++){
      string += line 
     }
-    return string 
+    return string;
     }
-    console.log(drawLine('Sabitha'));
-    console.log("sabitha");
+     console.log(drawLine(19));
+
+// function to draw topborder
+ function drawtopborder(b){
+     
+ }
