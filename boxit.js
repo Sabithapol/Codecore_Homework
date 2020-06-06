@@ -1,13 +1,3 @@
-/*function drawline(name){
-    let line= "─";
-    let i=1;
-    while(i<=name.length){
-        return line * i;
-        i++;
-    }
-
-}
-drawline("sabitha")*/
 // function to draw line
     function drawLine(a){
     let line ="━"
@@ -38,5 +28,5 @@ function drawtopborder(b){
     console.log(drawtopborder(19));
 //function to drawmissdle border
 function drawmiddleborder(a){
-    
+
 }
