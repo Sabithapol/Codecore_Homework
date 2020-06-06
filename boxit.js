@@ -1,32 +1,48 @@
+
 // function to draw line
     function drawLine(a){
     let line ="━"
     let string = ""
-    for ( let i = 1; i <=a; i++){
+    for ( let i = 1; i <=a.length; i++){
      string += line 
     }
     return string;
     }
-     console.log(drawLine(19));
+     console.log(drawLine("sabitha"));
 
 // function to draw topborder
-function drawtopborder(b){
+function drawtopborder(a){
     let topb ="┏"
     let topb1="┓"
-    let string1 = ""
-    for ( let i = 1; i <=b; i++){
+    let string = ""
+    for ( let i = 1; i <=a.length; i++){
         if(i==1){
-            string1=string1+topb;
-        }else if(i==19){
-            string1=string1+topb1;
+            string=string+topb;
+        }else if(i==a.length){
+            string=string+topb1;
         }else{
-            string1=string1+drawLine(19)
+            string=string+drawLine("sabitha")
         }
-    return string1;
+    return string;
     }
 }
-    console.log(drawtopborder(19));
-//function to drawmissdle border
-function drawmiddleborder(a){
+    console.log(drawtopborder("sabitha"));
 
+
+//function to drawmiddle border
+function drawmiddleline(a){
+    let start="┣"
+    let end="┫"
+    let string =""
+    for ( let i = 1; i <=a.length; i++){
+        if(i==1){string=string+start;
+        }else if(i==a.length){
+            string=string+end;
+        }else{
+            string=string+drawLine("sabitha")
+        }
+    return string;
+    }
 }
+    console.log(drawmiddleline("sabitha"));
+
