@@ -21,5 +21,12 @@ drawline("sabitha")*/
 
 // function to draw topborder
  function drawtopborder(b){
-     
- }
+     let topb ="┌"
+     let string1 = ""
+     for ( let i = 1; i <=a; i++){
+        string += line 
+       }
+       return string;
+    }
+        console.log(drawLine(19));
+    
