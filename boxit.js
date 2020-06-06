@@ -68,20 +68,15 @@ function drawBottomborder(a){
 function barsaround(a){
     let bar="┃"
     let string =""
-    for(i=1; i<=a.length; i++){
-        if(i==1){
+    for(i=0; i<=a.length+1; i++){
+        if(i==0){
             string=string+bar
-        }else if(i==a.length){
+        }else if(i==a.length+1){
             string=string+bar
         }else{
-            string=string+" ";
+            string=string+"a[i]";
         }
     return string;
     }
 }
 console.log(barsaround("sabitha"))
-//otherway for bars around
-if(NodeIterator=1){
-
-
-}
