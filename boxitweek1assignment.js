@@ -46,6 +46,3 @@ function drawLine(number) {
   const myArgs = process.argv.slice(2);
   boxit(myArgs)
   boxit(["sabitha","jamie", "hohn"])
-
-
-
