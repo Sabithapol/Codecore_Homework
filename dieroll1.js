@@ -10,4 +10,4 @@ for(i=0;i<myArgs[0];i++){
     console.log("Rolled : "+ noondie);
     Total += Total + noondie;
 }
-console.log(Total/myArgs[0]);
+//console.log(Total/myArgs[0]);
