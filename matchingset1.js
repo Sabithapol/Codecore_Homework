@@ -15,12 +15,11 @@ function matchingset(arrA, arrB){
         let j=1;
         for(i=0;i<arr3.length;i++){
           if(i===j){
-            return false;
+            return 0;
           }elseif(j<=arr3.length&&arr3[i]===arr3[j]){
              arr3.splice(j,1);
                j++;
           }
-            console.log("nothing")
         console.log(arr3)
         }
 }
