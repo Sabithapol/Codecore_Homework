@@ -1,30 +1,21 @@
-function matchingset(arrA, arrB){
-    let arr3 = [];
-    let i=0;
-      for(let row=0;row<arrA.length;row++){
-          for(let col=0;col<arrB.length;col++){
-              if(arrA[row]===arrB[col])
+let arr3 = [];
+function matchingset(arrA,arrB){
+      for(let i=0;i<arrA.length;i++){
+          for(let j=0;j<arrB.length;j++){
+              if(arrA[i]===arrB[j])
               {
-                arr3[i] = arrA[row];
-                i++;
+              arr3.push(arrA[i]);
               }
           }
       }
-        console.log(arr3)
-        console.log(arr3.indexOf("c"))//only gives index of first c
-        let j=1;
-        for(i=0;i<arr3.length;i++){
-          if(i===j){
-            return 0;
-          }elseif(j<=arr3.length&&arr3[i]===arr3[j]){
-             arr3.splice(j,1);
-               j++;
-          }
-        console.log(arr3)
-        }
 }
-matchingset(["s","b","h","c"],["a","b","c","h","c"])
-//matchingset([1,0,3,3,2,5,4],[1,2,3,5,6])
+matchingset(["s","a","b","h","a","a","c"],["a","b","c","c","a","h","c"])
+arr4 = arr3.sort();  
+for(i=0;i<arr4.length;i++){
+  if(arr4[i+1]==arr4[i]){
+  arr4.splice(i,1) 
+  }
+}
+console.log(arr4)
 
-//checking duplicates 
-//console.log(arr3.indexOf("c"))
+        
