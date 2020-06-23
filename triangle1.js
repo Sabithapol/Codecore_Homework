@@ -4,7 +4,7 @@ if(myArgs.includes(0)){
 }
 let perimeter = myArgs[0]+myArgs[1]+myArgs[2];
 console.log(perimeter)
-let Area = 0.5*myArgs[0]*myArgs[2];
+let Area = 0.5*(myArgs[0]*myArgs[2]);
 console.log(Area)
 
 

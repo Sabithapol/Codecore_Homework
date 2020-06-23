@@ -14,6 +14,13 @@ for(i=0;i<myArgs.length;i++){
 console.log(result)
 
 }*/
+/*Write a script `toggleCase.js` that takes a string as an argument then logs the string with the casing of each letter reversed. Lower case becomes upper case and vice versa.
+
+Example Usage:
+
+$ node toggleCase.js "What If Imps Were Real"
+
+wHAT iF iMPS wERE rEAL*/
 
 
 const myArgs = process.argv.slice(2);
