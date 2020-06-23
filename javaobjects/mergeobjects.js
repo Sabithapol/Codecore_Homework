@@ -1,3 +1,0 @@
-function merge(objA,objB){
-    
-}
