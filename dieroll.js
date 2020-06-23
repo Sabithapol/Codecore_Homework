@@ -1,5 +1,6 @@
 /*Rolling Dice
-Write a script `rollingDice.js` that takes two numbers as arguments. The first one represents a quantity of dice and the second one represents a number of faces on the dice. Simulate rolling the dice. Log the result of each dice, the sum and the average of all rolls.
+Write a script `rollingDice.js` that takes two numbers as arguments.
+ The first one represents a quantity of dice and the second one represents a number of faces on the dice. Simulate rolling the dice. Log the result of each dice, the sum and the average of all rolls.
 
 Example usage:
 
@@ -18,7 +19,8 @@ Average Roll: 2
 Total: 6*/
 
 
-const myArgs = process.argv.slice[2];
+const myArgs = process.argv.slice(2);
+console.log(myArgs[0])
 //console.log("   Rolled : "+ Math.floor((Math.random()*6)+1));
 //console.log(Math.floor((Math.random()*6)+1));
 //console.log(myArgs[0]);

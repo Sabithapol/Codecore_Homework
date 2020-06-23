@@ -17,12 +17,8 @@ function matchingset(arrA,arrB){
       }
 }
 matchingset(["s","a","b","h","a","a","c"],["a","b","c","c","a","h","c"])
-arr4 = arr3.sort();  
-for(i=0;i<arr4.length;i++){
-  if(arr4[i+1]==arr4[i]){
-  arr4.splice(i,1) 
-  }
-}
-console.log(arr4)
+var A = new Set(arr3)
+console.log(A)
+console.log(arr3)
 
-        
+        g

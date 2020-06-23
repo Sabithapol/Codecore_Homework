@@ -1,5 +1,4 @@
 /*Write a function, findDuplicates, that takes an array of strings and/or integers, values. Return a new array containing all the values that are duplicated in the array.
-
 Example:
 
 findDuplicates([1, 1, 3, 4, 5, 6, 7, 8, 9, 9]) // returns [1, 9]
@@ -9,21 +8,22 @@ let duplicateaaray = [];
 function findduplicates(arr1){
     arr1sliced = arr1.slice().sort();
     for(i=0;i<arr1sliced.length;i++){
-        if(arr1sliced[i+1]===arr1sliced[i]){
-        duplicateaaray.push(arr1sliced[i])}
+        if(arr1sliced[i+1]===arr1sliced[i])
+        {
+        duplicateaaray.push(arr1sliced[i])
         }
-    for(j=0;j<duplicateaaray.length;j++){
-            if(duplicateaaray[i+1]==duplicateaaray[i]){
-                duplicateaaray.splice(i);
-            }
-    }  
-}
-findduplicates([1,8,2,5,1,9,1,9,8,2,1])
+    }
+} 
+findduplicates([1,8,2,5,1,9,1,9,8,2,3,2,1])
+let A = new Set(duplicateaaray)
 console.log(duplicateaaray)
+console.log(A)
 
+//if(duplicate_array.has(duplicate_array[0]>1)){
+// duplicate_array.delete(duplicate_array[0])
+//}
 
-
-
+console.log(typeof(duplicateaaray))
 
 
 

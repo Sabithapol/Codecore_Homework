@@ -18,15 +18,15 @@ fillRectangle(5, 3, "🔥")
 
 
 function fillRectangle(width,height,chr){
-    this.width = width;
-    this.height = height;
-    this.chr = chr;
-    let arr = [];
+    const arr = [];
     for(let row=0;row<height;row++){
+        const rowarray = [];
         for(let col=0;col<width;col++){
-            arr.push(chr);
+            rowarray.push(chr);
         }
-    }console.log(arr)
+        arr.push(rowarray)
+    }
+    return arr;
 }
-fillRectangle(2,3,"*")
+console.log(fillRectangle(5,10,"*"))
 //have to write another func also

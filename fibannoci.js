@@ -4,9 +4,10 @@ for(i=0;i<myArgs[0];i++){
     //let fibseries = [];
     if(i===0||i===1){
         fibseries[i] =1;
-    }else{
+    }else {
         fibseries[i]=fibseries[i-1]+fibseries[i-2];
-    }console.log(fibseries);
+        
+    }
 }
-//console.log(fibseries);
+console.log(fibseries);
 
